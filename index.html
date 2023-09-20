@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<h1>Movie Rater</h1>
+	<div id="form">
+		<form id="movie">
+			<label for="title">
+				<input id="title" type="text" placeholder="Movie title">
+			</label>
+			<label for="rating">
+				<input id="rating" type="number" placeholder="Rating">
+			</label>
+			<input type="submit">
+		</form>
+	</div>
+	<div id="movie-ratings">
+		<table>
+			<thead>
+				<tr>
+					<td id="sort-title">Title</td>
+					<td id="sort-rating">Rating</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Caddyshack</td>
+					<td>9.9</td>
+					<td><button>&#x2715;</button></td>
+				</tr>
+				<tr>
+					<td>Alien</td>
+					<td>10</td>
+					<td><button>&#x2715;</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- <div id="empty-state">No movies rated yet!</div> -->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
